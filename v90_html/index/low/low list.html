@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<link href="../zijilai.css" rel="stylesheet" type="text/css">
+	<head>
+    	<title>低惯量型</title>
+        <meta charset='utf-8'>
+    	<script>
+		function myFunction()
+		{
+			var gonglv=document.getElementsByName('gonglv')[0];
+			var encoder=document.getElementsByName('encoder')[0];
+			var brake=document.getElementsByName('brake')[0];
+			//alert('you choice:'+gonglv.value+encoder.value);
+			if(gonglv.value==0.05 && encoder.value=='A')
+				{
+					//window.location.href='C:\Users\lenovo\Desktop\v90\index\low\1FL6022-2AF21-1AA1.html';
+//window.open('1FL6022-2AF21-1MA1.HTML');
+					window.location.href='1FL6022-2AF21-1AA1.HTML';
+				}
+			else if(gonglv.value==0.05 && encoder.value=='M')
+				{
+					window.location.href='1FL6022-2AF21-1MA1.HTML';
+				}
+			else if(gonglv.value==0.10 && encoder.value=='A')
+				{
+					window.location.href='1FL6024-2AF21-1LA1.HTML';
+				}
+			else if(gonglv.value==0.10 && encoder.value=='M')
+				{
+					window.location.href='1FL6024-2AF21-1MA1.HTML';
+				}
+			else if(gonglv.value==0.20 && encoder.value=='A')
+				{
+					window.location.href='1FL6032-2AF21-1LA1.HTML';
+				}
+			else if(gonglv.value==0.20 && encoder.value=='M')
+				{
+					window.location.href='1FL6032-2AF21-1MA1.HTML';
+				}
+			else if(gonglv.value==0.40 && encoder.value=='A')
+				{
+					window.location.href='1FL6034-2AF21-1LA1.HTML';
+				}
+			else if(gonglv.value==0.40 && encoder.value=='M')
+				{
+					window.location.href='1FL6034-2AF21-1MA1.HTML';
+				}
+			else if(gonglv.value==0.75 && encoder.value=='A')
+				{
+					window.location.href='1FL6042-2AF21-1LA1.HTML';
+				}
+			else if(gonglv.value==0.75 && encoder.value=='M')
+				{
+					window.location.href='1FL6042-2AF21-1MA1.HTML';
+				}
+			else if(gonglv.value==1.00 && encoder.value=='A')
+				{
+					window.location.href='1FL6044-2AF21-1LA1.HTML';
+				}
+			else if(gonglv.value==1.00 && encoder.value=='M')
+				{
+					window.location.href='1FL6044-2AF21-1MA1.HTML';
+				}
+			else if(gonglv.value==1.5 && encoder.value=='A')
+				{
+					window.location.href='1FL6052-2AF21-1LA1.HTML';
+				}
+			else if(gonglv.value==1.5 && encoder.value=='M')
+				{
+					window.location.href='1FL6052-2AF21-1MA1.HTML';
+				}
+			else if(gonglv.value==2.00 && encoder.value=='A')
+				{
+					window.location.href='1FL6054-2AF21-1LA1.HTML';
+				}
+			else if(gonglv.value==2.00 && encoder.value=='M')
+				{
+					window.location.href='1FL6054-2AF21-1MA1.HTML';
+				}
+		}
+		</script>
+	<body>
+		<h1>SINAMICS V90低惯量</h1>
+		<img src='../select.PNG' width='800' height='650' alt='选型样本'></img>
+		<hr class='low'>
+		<h2>功率</h2>
+		<select name='gonglv' >
+		<option value='0.05'>0.05</option>
+		<option value='0.10'>0.10</option>
+		<option value='0.20'>0.20</option>
+		<option value='0.40'>0.40</option>
+		<option value='0.75'>0.75</option>
+		<option value='1.00'>1.00</opiton>
+		<option value='1.50'>1.50</option>
+		<option value='2.00'>2.00</option>
+		</select>
+            
+		
+		<h2>编码器</h2>
+		<select name='encoder'>
+		<option value='A'>增量型编码器TTL2500ppr</option>
+		<option value='M'>21位单圈绝对值编码器</option>
+		</select>
+		
+		<p>
+		<button class='btn16' type='button'onclick='myFunction()'>查询
+        </button>
+        <button class='btn16' type="button"onclick="location='v90base.html'">返回</button>
+		</p>
+	</body>
+</html>

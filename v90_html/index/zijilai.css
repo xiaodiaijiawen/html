@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1{/*  字号 */
+   font-size:40px;
+    /*  字体颜色  */
+   color:#001f3f;
+    /*  字体  */
+   font-family: "MicroSoft YaHei";
+   /* 行距 */
+   line-height:1.75
+   }
+hr{height:8px;border:none;border-top:8px groove skyblue;
+   }
+.low{
+	height:1px;border:none;border-top:1px solid #39CCCC;
+   }
+a:link{
+	color:#39CCCC;
+	font-size:30px;
+	font-family: "MicroSoft YaHei";
+	line-height:1.25;
+	text-decoration:none;
+}
+a:visited{
+	color:#001f3f;
+	font-size:30px;
+	font-family: "MicroSoft YaHei";
+	line-height:1.25;
+	text-decoration:none;
+}
+a:hover{ color:#3D9970; }
+h2{ font-size:30px;
+	color:#0074D9;
+	font-family: "MicroSoft YaHei";
+	line-height:1.75
+}
+select{
+	 background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   border: 1px solid #ccc;
+   height: 34px;
+   font-family: "MicroSoft YaHei";
+}
+p{	font-size:20px;
+	color:#111111;
+	font-family: "MicroSoft YaHei";
+	line-height:1.50
+}
+.btn16
+{
+	width:120px;
+	height:30px;
+	background-image: url(../image/button/bg10.jpg);
+	color:#FFF;
+	font-size:15px;
+	font-family: "MicroSoft YaHei";	
+}
